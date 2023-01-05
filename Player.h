@@ -5,7 +5,7 @@
 
 class Player {
 private:
-	Transform transform;
+	Transform player;
 	Bullet* bullet;
 
 public:
@@ -13,4 +13,8 @@ public:
 	~Player();
 	void Draw();
 	void Update(char* keys);
+	void Oncollision();
+	int getPosX() { return player.posX_; }
+	int getPosY() { return player.posY_; }
+	int getradius() { return player.radius_; }
 };

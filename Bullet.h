@@ -1,12 +1,11 @@
 #pragma once
-
 #include"Transform.h"
 
 
 class Bullet {
 private:
-	Transform transform;
-	int isShot;
+	Transform bullet;
+	int isShot_;
 
 public:
 	Bullet();
@@ -16,5 +15,8 @@ public:
 	void Draw();
 	void Shot(Transform transform);
 	int IsShot();
+	int getPosX() { return bullet.posX_; }
+	int getPosY() { return bullet.posY_; }
+	int getradius() { return bullet.radius_; }
 
 };

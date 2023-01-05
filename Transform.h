@@ -1,8 +1,9 @@
 #pragma once
 
 typedef struct Transform {
-	int posX;
-	int posY;
-	int radius;
-	int speed;
+	int posX_;
+	int posY_;
+	int radius_;
+	int speed_;
+	int color_;
 }; Transform;
